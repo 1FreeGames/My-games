@@ -5,14 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Games Mod</title>
   <style>
-    body { background: #111; color: #fff; font-family: Arial; padding: 20px; }
-    .game-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; }
-    .game-card { background: #1a1a1a; padding: 10px; border-radius: 10px; text-align: center; }
-    .game-card a { color: #0f0; text-decoration: none; font-weight: bold; }
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    .game-grid {
+      width: 100%;
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .game-card {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card a {
+      color: #00ff99;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <h1>Free Games Mod</h1>
+
+  <div class="header">
+    <h1>Free Games Mod</h1>
+    <p>choose any game</p>
+  </div>
+
   <div class="game-grid">
     <div class="game-card"><a href="baseball9.html">Baseball 9</a></div>
     <div class="game-card"><a href="gta.html">GTA Mobile</a></div>
@@ -23,5 +76,6 @@
     <div class="game-card"><a href="spiderman.html">Spider-Man</a></div>
     <div class="game-card"><a href="fifa.html">FIFA Mobile</a></div>
   </div>
+
 </body>
 </html>
